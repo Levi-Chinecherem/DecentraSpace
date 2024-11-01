@@ -25,8 +25,9 @@ The backend is designed as a REST API-driven architecture with all critical busi
    - `/github/unlink/`: Unlink an existing GitHub account.
    - `/github/deploy/`: Trigger a deployment for a linked repository.
 
-#### 3. **Billing and Credit System**
-   - **Pay-As-You-Go Billing**: Tracks user credits and deducts them for paid services in real-time.
+### 3. **Billing and Credit System**
+   - **Payment Options**: Users can purchase credits through decentralized means using Polygon tokens or through centralized card-based payment systems like Paystack, enabling global access, especially for African countries.
+   - **Pay-As-You-Go Billing**: Tracks user credits and deducts them for paid services in real-time, whether paid via cryptocurrency or card.
    - **Service-Specific Billing**: Each service (hosting, domain, database) deducts credits based on consumption, including service pause/resume states.
    - **Credit Balance and Usage Reports**: Detailed reporting on credit consumption for user reference and transparency.
 
@@ -34,6 +35,8 @@ The backend is designed as a REST API-driven architecture with all critical busi
    - `/billing/balance/`: Get the user’s current credit balance.
    - `/billing/deduct/`: Deduct credits for a specific service usage.
    - `/billing/history/`: Retrieve credit usage history.
+   - `/billing/recharge/`: Recharge credits using either Polygon tokens or centralized payment methods.
+   - `/billing/payment-methods/`: List available payment methods (cryptocurrency, credit card) and their details.
 
 #### 4. **Decentralized Storage and File Management**
    - **IPFS & Arweave Integration**: Direct interaction with IPFS and Arweave to store user-uploaded files, providing decentralized access to assets.
